@@ -1,5 +1,6 @@
+import 'package:VillageBank/screens/dashboard.dart';
 import 'package:flutter/material.dart';
-import 'package:VillageBank/screens/user.dart';
+import 'package:VillageBank/screens/dashboard.dart';
 import 'package:VillageBank/widgets/button.dart';
 
 class SignUpScreen extends StatefulWidget {
@@ -38,7 +39,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => UserScreen(
+        builder: (context) => DashboardScreen(
           name: userName,
           email: email,
         ),
@@ -130,3 +131,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 ),
               ],
             ),
+          ), 
+        ),
+      ),
+    );
+  }
+}
